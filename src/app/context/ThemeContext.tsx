@@ -12,10 +12,10 @@ interface ThemeContextType {
   setTheme: (theme: Theme) => void; // defining type as : setTheme is a function , that will recieve a 'theme' as an argument of type 'Theme' and setTheme is returning void
 }
 
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined); // at first the context is undefined i.e empty
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setThemeState] = useState<Theme>("light");
+  const [theme, setThemeState] = useState<Theme>("light"); // This state will always be of type Theme . The <Theme> is TypeScript syntax.
   const [mounted, setMounted] = useState(false);
 
   //update the theme based on the mounted state
@@ -35,6 +35,8 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   // initialize theme
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as Theme | null;
+    //tells TypeScript: “savedTheme can be either Theme type ("light" or "dark") or null.”
+
     const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
       .matches
       ? "dark"
@@ -51,7 +53,9 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>{children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>
+      {children}
+    </ThemeContext.Provider>
   );
 };
 
@@ -63,3 +67,6 @@ export function useTheme() {
   }
   return context;
 }
+
+
+

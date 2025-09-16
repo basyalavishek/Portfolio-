@@ -32,10 +32,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <Navbar />
-          <main className="pt-20">
-            {/* Push content below navbar */}
-            {children}
-          </main>
+          <main className="min-h-screen pt-24">{children}</main>
           {/* <Footer /> */}
         </ThemeProvider>
       </body>
