@@ -33,7 +33,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Navbar />
           <main className="min-h-screen pt-24">{children}</main>
-          {/* <Footer /> */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
