@@ -7,7 +7,7 @@ const sociallinks = () => {
     <div className="flex justify-center space-x-4 mb-8">
       <Link
         href="https://github.com/basyalavishek"
-        className="text-2xl text-gray-600 dark:text-gray-300 hover:text-primary transition"
+        className="text-2xl text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -23,7 +23,7 @@ const sociallinks = () => {
       </Link>
       <Link
         href="https://www.instagram.com/avishekbasyal14"
-        className="text-2xl text-gray-600 dark:text-gray-300 hover:text-primary transition"
+        className="text-2xl text-gray-600 dark:text-gray-300 hover:text-pink-500 transition"
         target="_blank"
         rel="noopener noreferrer"
       >

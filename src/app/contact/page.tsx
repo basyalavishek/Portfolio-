@@ -1,5 +1,5 @@
 "use client";
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import Link from "next/link";
 
@@ -97,7 +97,7 @@ const contactPage = () => {
 
         {/* contact form */}
 
-        <div className="bg-white/50 dark:bg-dark/50 p-6 rounded-lg shadow-md">
+        <div className="bg-gray-100/20 dark:bg-dark/50 p-6 rounded-lg shadow-md">
           <form onSubmit={handleSubmit} className="space-y-6 ">
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -111,7 +111,7 @@ const contactPage = () => {
                 id="name"
                 name="name"
                 placeholder="Enter your Full name"
-                className="w-full px-4 py-2 rounded-md border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-dark dark:placeholder:text-white/50 focus:ring-2 focus:ring-primary focus:border-none"
+                className="w-full px-4 py-2 rounded-md border-gray-300 dark:border-gray-700 bg-gray-100/70 dark:bg-dark dark:placeholder:text-white/50 focus:ring-2 focus:outline-none "
               />
             </div>
 
@@ -127,7 +127,7 @@ const contactPage = () => {
                 id="email"
                 name="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-2 rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-dark dark:placeholder:text-white/50 focus:ring-2 focus:ring-primary focus:border-none"
+                className="w-full px-4 py-2 rounded-md border-gray-300 dark:border-gray-700 bg-gray-100/70 dark:bg-dark dark:placeholder:text-white/50 focus:ring-2 focus:outline-none focus:border-none"
               />
             </div>
 
@@ -146,7 +146,7 @@ const contactPage = () => {
                 id="message"
                 name="message"
                 placeholder="Enter your message"
-                className="w-full px-4 py-2 rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-dark dark:placeholder:text-white/50 focus:ring-2 focus:ring-primary focus:border-none"
+                className="w-full px-4 py-2 rounded-md border-gray-300 dark:border-gray-700 bg-gray-100/70 dark:bg-dark dark:placeholder:text-white/50 focus:ring-2  focus:outline-none focus:border-none"
               />
             </div>
 

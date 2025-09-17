@@ -10,8 +10,11 @@ const page = () => {
 
       {/* bio section */}
       <section className="mb-16">
-        <p className="text-lg text-secondary max-2-3xl mx-auto text-center">
-          My about information will be updated soon.
+        <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
+          Hi, I’m Avishek Basyal, a passionate Computer Engineering student with
+          a keen interest in AI, Machine Learning, and Full-Stack Development. I
+          love building innovative projects that solve real-world problems and
+          continuously learning new technologies.
         </p>
       </section>
 
@@ -29,7 +32,7 @@ const page = () => {
       <section className="mb-16">
         <h2 className="section-title">Education</h2>
         <div className="max-w-3xl mx-auto space-y-8">
-          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md text-center">
+          <div className="bg-gray-100/20 dark:bg-dark/50 p-6 rounded-lg shadow-md text-center">
             <h3 className="font-semibold text-xl mb-2">
               Studying Bachelor in Computer Engineering
             </h3>

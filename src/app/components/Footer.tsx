@@ -4,23 +4,26 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 dark:bg-dark border-t border-gray-200 dark:border-gray-800">
-      <div className="container max-w-7xl mx-auto px-4 py-8">
+    <footer className="bg-white/80 dark:bg-dark border-t border-gray-200 dark:border-gray-800">
+      <div className="container max-w-7xl mx-auto px-4 py-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-2 md:mb-0">
-            <Link href="/" className="text-xl font-bold text-primary ">
+            <Link
+              href="/"
+              className="text-xl md:text-2xl font-bold text-primary "
+            >
               Avishek&trade;
             </Link>
           </div>
           <div className="mb-2 md:mb-0">
-            <p className="text-sm text-secondary">
+            <p className="text-md md:text-lg text-secondary">
               © {new Date().getFullYear()} Avishek. All rights reserved
             </p>
           </div>
           <div className="flex justify-center space-x-6">
             <Link
               href="https://github.com/basyalavishek"
-              className="text-2xl text-gray-600 dark:text-gray-300 hover:text-primary transition"
+              className="text-2xl text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -36,7 +39,7 @@ const Footer = () => {
             </Link>
             <Link
               href="https://www.instagram.com/avishekbasyal14"
-              className="text-2xl text-gray-600 dark:text-gray-300 hover:text-primary transition"
+              className="text-2xl text-gray-600 dark:text-gray-300 hover:text-pink-500 transition"
               target="_blank"
               rel="noopener noreferrer"
             >

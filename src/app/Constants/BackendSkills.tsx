@@ -3,7 +3,7 @@ import { FaLaptop } from "react-icons/fa";
 
 const BackendSkills = () => {
   return (
-    <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md ">
+    <div className="bg-gray-100/20 dark:bg-dark/50 p-6 rounded-lg shadow-md ">
       <FaLaptop className="h-8 w-8 text-primary mb-4 " />
       <h3 className="text-xl font-semibold mb-2">Backend</h3>
       <ul className="text-secondary space-y-2 ">
