@@ -3,10 +3,9 @@
 import React from "react";
 import { projects } from "@/contents/project";
 import Image from "next/image";
-import Link from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { fadeInUp, staggerContainer, cardHoverSmall } from "@/utils/animations";
+import { fadeInUp, staggerContainer } from "@/utils/animations";
 
 const Projects = () => {
   return (

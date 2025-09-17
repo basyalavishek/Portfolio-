@@ -55,7 +55,7 @@ const Contact = () => {
         <div className="space-y-8">
           <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
           <p className="text-secondary md:w-2/3">
-            I'm always open to discussing new projects, creative ideas or
+            I&apos;m always open to discussing new projects, creative ideas or
             opportuinties to be part of your visions.
           </p>
           <div className="space-y-4">

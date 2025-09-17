@@ -29,7 +29,7 @@ const Hero = () => {
           transition={{ delay: 0.3 }}
           className="text-4xl md:text-6xl font-bold mb-6"
         >
-          Hi , I'm{" "}
+          Hi , I&apos;m{" "}
           <motion.span
             {...fadeIn}
             transition={{ delay: 0.8 }}

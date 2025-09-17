@@ -6,8 +6,6 @@ import {
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/outline";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { menuItems } from "./menu";
