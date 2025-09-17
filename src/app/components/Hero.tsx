@@ -5,15 +5,15 @@ import HeroButton from "../Constants/HeroButton";
 
 const Hero = () => {
   return (
-    <section className="container py-28 max-w-7xl mx-auto px-4">
+    <section className="container py-20 max-w-7xl mx-auto px-4">
       <div className="max-w-3xl mx-auto text-center">
         <div className="flex flex-col items-center mb-4">
           <Image
-            src="/profile.avif"
+            src="/profile.jpg"
             alt="profile image"
-            width={100}
-            height={100}
-            className="rounded-full mb-4 w-40 h-40 object-cover ring-2 ring-primary"
+            width={200}
+            height={200}
+            className="rounded-full w-40 h-40 mb-4 md:w-60 md:h-60 object-cover ring-2 ring-primary"
           />
         </div>
         <h1 className="4xl md:text-6xl font-bold mb-6">
