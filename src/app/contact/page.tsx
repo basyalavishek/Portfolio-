@@ -154,7 +154,7 @@ const contactPage = () => {
               {status === "loading" ? "Sending..." : "Send Message"}
             </button>
             {status === "success" && (
-              <p className="text-gray-500 text-center ">
+              <p className="text-green-500 text-center ">
                 Message Sent Successfully
               </p>
             )}
