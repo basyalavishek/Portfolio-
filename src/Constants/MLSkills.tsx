@@ -1,9 +1,14 @@
 import React from "react";
 import { FaRobot } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
-const ML_Skills = () => {
+const MLSkills = () => {
   return (
-    <div className="bg-gray-100/20 dark:bg-dark/50 p-6 rounded-lg shadow-md ">
+    <motion.div
+      className="bg-gray-100/20 dark:bg-dark/50 p-6 rounded-lg shadow-md "
+      whileHover={{ scale: 1.05 }} // ✅ explicit
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <FaRobot className="h-8 w-8 text-pink-500 mb-4 " />
       <h3 className="text-xl font-semibold mb-2">AI / ML</h3>
       <ul className="text-secondary space-y-2 ">
@@ -13,8 +18,8 @@ const ML_Skills = () => {
         <li>Natural Language Processing </li>
         <li>Agentic AI (AI Agents, LLMs + tools)</li>
       </ul>
-    </div>
+    </motion.div>
   );
 };
 
-export default ML_Skills;
+export default MLSkills;

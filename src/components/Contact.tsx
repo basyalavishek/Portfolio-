@@ -11,7 +11,7 @@ interface FormData {
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
-const contactPage = () => {
+const Contact = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -47,7 +47,7 @@ const contactPage = () => {
   };
 
   return (
-    <div className="container max-w-7xl mx-auto py-20">
+    <div id="contact" className="container max-w-7xl mx-auto py-20">
       <h1 className="text-4xl font-bold mb-12 text-center">Contact Me</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* contact info */}
@@ -170,4 +170,4 @@ const contactPage = () => {
   );
 };
 
-export default contactPage;
+export default Contact;
