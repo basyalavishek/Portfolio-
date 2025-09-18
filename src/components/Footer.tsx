@@ -1,19 +1,23 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import useGetActive from "@/components/useGetActive";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
+  const { scrollToSection } = useGetActive();
+
   return (
     <footer className="bg-white/80 dark:bg-dark border-t border-gray-200 dark:border-gray-800">
       <div className="container max-w-7xl mx-auto px-4 py-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-2 md:mb-0">
-            <Link
-              href="/"
-              className="text-xl md:text-2xl font-bold text-primary "
+            <div
+              onClick={() => scrollToSection("home")}
+              className="text-xl md:text-2xl font-bold text-primary cursor-pointer"
             >
               Avishek&trade;
-            </Link>
+            </div>
           </div>
           <div className="mb-2 md:mb-0">
             <p className="text-md md:text-lg text-secondary">
